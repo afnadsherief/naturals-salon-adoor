@@ -2,52 +2,46 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Naturals Salon Adoor | Made For The Spotlight</title>
-<meta name="description" content="Premium Unisex Salon, Beauty Studio & Bridal Destination in Adoor.">
+<meta name="description" content="Premium Hair, Beauty & Bridal Studio in Adoor">
 
 <style>
 :root{
 --gold:#c9a35f;
 --dark:#151311;
 --cream:#f7f2eb;
---panel:#201c18;
+--text:#2b241f;
 }
 *{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--cream);color:#222}
+body{margin:0;font-family:system-ui,sans-serif;background:var(--cream);color:var(--text)}
 .hero{
+position:relative;
 min-height:100vh;
 background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.55)),url('salon-chair-hero.jpg') center/cover;
-display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:24px}
-.hero h1{font-size:clamp(2.5rem,6vw,5rem);margin:.3em 0}
-.hero p{font-size:1.15rem;max-width:800px;margin:auto}
-.badge{display:inline-block;background:rgba(255,255,255,.15);backdrop-filter:blur(10px);padding:10px 18px;border-radius:999px}
-.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:25px}
-.btn{padding:15px 24px;border-radius:999px;text-decoration:none;font-weight:700}
+display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px}
+.hero-review{
+position:absolute;top:24px;left:24px;background:rgba(255,255,255,.92);
+color:#111;padding:12px 16px;border-radius:16px;font-weight:700;
+box-shadow:0 10px 25px rgba(0,0,0,.15)}
+.hero h1{font-size:clamp(2.5rem,6vw,5rem);margin:.2em 0}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{padding:14px 22px;border-radius:999px;text-decoration:none;font-weight:700}
 .gold{background:var(--gold);color:#111}
-.dark{background:white;color:#111}
+.white{background:#fff;color:#111}
 .section{max-width:1200px;margin:auto;padding:70px 20px}
-h2{font-size:2.3rem;text-align:center}
-.review-badge{
-background:white;border-radius:20px;padding:20px;text-align:center;
-box-shadow:0 10px 30px rgba(0,0,0,.08)
-}
+h2{text-align:center;font-size:2.2rem}
+.stats,.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#fff;padding:22px;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,.08)}
+.banner img,.gallery img{width:100%;display:block;border-radius:22px}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.gallery img,.banner img{width:100%;border-radius:22px;display:block}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-.card{background:white;padding:24px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
-.hours{background:var(--dark);color:white;border-radius:24px;padding:30px}
-.review{background:white;padding:22px;border-radius:20px}
-footer{background:var(--dark);color:white;padding:40px;text-align:center}
-.float{
-position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:12px;z-index:999}
-.float a{
-width:58px;height:58px;border-radius:50%;
-display:flex;align-items:center;justify-content:center;
-background:white;text-decoration:none;font-size:24px;
-box-shadow:0 10px 25px rgba(0,0,0,.2)}
+.gallery-item{text-align:center}
+.review{background:#fff;padding:20px;border-radius:18px}
+.hours{background:var(--dark);color:#fff;border-radius:24px;padding:30px;text-align:center}
 iframe{width:100%;height:420px;border:0;border-radius:24px}
-.goldtxt{color:var(--gold)}
+footer{background:var(--dark);color:#fff;text-align:center;padding:40px}
+.float{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:10px;z-index:999}
+.float a{width:58px;height:58px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 10px 25px rgba(0,0,0,.2)}
 </style>
 
 <script type="application/ld+json">
@@ -56,7 +50,6 @@ iframe{width:100%;height:420px;border:0;border-radius:24px}
 "@type":"BeautySalon",
 "name":"Naturals Salon Adoor",
 "telephone":"08848113819",
-"address":{"@type":"PostalAddress","streetAddress":"GROUND, AMC, XX1/409, Pathanapuram Road","addressRegion":"Kerala","postalCode":"691523"},
 "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"249"}
 }
 </script>
@@ -64,23 +57,28 @@ iframe{width:100%;height:420px;border:0;border-radius:24px}
 <body>
 
 <section class="hero">
+<div class="hero-review">⭐ 4.8 Rating<br>249 Google Reviews</div>
 <div>
-<div class="badge">⭐ 4.8 Rating • 249 Google Reviews</div>
 <h1>Naturals Salon Adoor</h1>
 <p>Premium Unisex Salon • Beauty Studio • Bridal Destination</p>
-<p class="goldtxt"><strong>Made For The Spotlight</strong></p>
+<p><strong>Made For The Spotlight</strong></p>
 
 <div class="btns">
-<a class="btn gold" href="https://wa.me/918848113819">Book on WhatsApp</a>
-<a class="btn dark" href="https://maps.app.goo.gl/6b8Q9w9oVejY1xys7?g_st=ac">Get Directions</a>
+<a class="btn gold" href="https://wa.me/918848113819">WhatsApp</a>
+<a class="btn white" href="tel:+918848113819">Call Now</a>
+<a class="btn white" href="https://maps.app.goo.gl/6b8Q9w9oVejY1xys7">Directions</a>
 </div>
+
+<p>Open Daily • 9:00 AM – 10:00 PM</p>
 </div>
 </section>
 
 <section class="section">
-<div class="review-badge">
-<h3>Trusted by 249+ Customers</h3>
-<p>Google Rating: <strong>4.8/5</strong></p>
+<div class="stats">
+<div class="card"><strong>249+</strong><br>Happy Customers</div>
+<div class="card"><strong>4.8★</strong><br>Google Rating</div>
+<div class="card"><strong>9AM–10PM</strong><br>Open Daily</div>
+<div class="card"><strong>Bridal Packages</strong><br>Available</div>
 </div>
 </section>
 
@@ -89,29 +87,46 @@ iframe{width:100%;height:420px;border:0;border-radius:24px}
 </section>
 
 <section class="section">
-<h2>Experience The Salon</h2>
-<div class="gallery">
-<img src="spotlight-wall.jpg" alt="Naturals Spotlight Wall">
-<img src="wash-station.jpg" alt="Wash Station">
+<h2>Why Choose Naturals</h2>
+<div class="cards">
+<div class="card">Premium Interiors</div>
+<div class="card">Bridal Specialists</div>
+<div class="card">Hair Spa Treatments</div>
+<div class="card">Friendly Service</div>
+<div class="card">Personalized Care</div>
+<div class="card">Hygienic Environment</div>
 </div>
 </section>
 
 <section class="section">
-<h2>Services</h2>
+<h2>Experience The Salon</h2>
+<div class="gallery">
+<div class="gallery-item"><img src="salon-chair-hero.jpg"><h3>Salon Interior</h3></div>
+<div class="gallery-item"><img src="spotlight-wall.jpg"><h3>Signature Spotlight Wall</h3></div>
+<div class="gallery-item"><img src="wash-station.jpg"><h3>Wash & Treatment Area</h3></div>
+</div>
+</section>
+
+<section class="section">
+<h2>Popular Services</h2>
 <div class="cards">
-<div class="card"><h3>Hair Services</h3><p>Haircuts, Styling, Hair Extensions, Shampoo & Conditioning.</p></div>
-<div class="card"><h3>Beauty Treatments</h3><p>Facials, Skin Care, Waxing, Grooming & Tanning.</p></div>
-<div class="card"><h3>Makeup Studio</h3><p>Bridal Makeup, Engagement Makeup & Beauty Consultation.</p></div>
-<div class="card"><h3>Nails</h3><p>Acrylic Nails, Manicure & Pedicure.</p></div>
+<div class="card">Hair Spa</div>
+<div class="card">Hair Styling</div>
+<div class="card">Hair Coloring</div>
+<div class="card">Facials</div>
+<div class="card">Threading</div>
+<div class="card">Bridal Makeup</div>
+<div class="card">Manicure</div>
+<div class="card">Pedicure</div>
 </div>
 </section>
 
 <section class="section">
 <h2>Customer Reviews</h2>
 <div class="cards">
-<div class="review">“Had a very relaxing experience. Hima and Smithi took excellent care of my mother and me. Spacious, modern and clean salon.” — Riya Saji</div>
-<div class="review">“Very professional service. Amazing haircut. Will definitely visit again.” — Soniya Babu</div>
-<div class="review">“Amazing experience. Friendly staff. Highly recommended.” — Aleesha R Binu</div>
+<div class="review">“Very relaxing experience. Hima and Smithi took excellent care of us.”</div>
+<div class="review">“Amazing haircut and coloring. Highly recommended.”</div>
+<div class="review">“Professional service. Definitely visiting again.”</div>
 </div>
 </section>
 
@@ -125,7 +140,7 @@ iframe{width:100%;height:420px;border:0;border-radius:24px}
 
 <section class="section">
 <h2>Visit Us</h2>
-<p style="text-align:center">GROUND, AMC, XX1/409, Pathanapuram Road, Kerala 691523</p>
+<p style="text-align:center">GROUND, AMC, XX1/409, Pathanapuram Road, Adoor, Kerala 691523</p>
 <iframe src="https://www.google.com/maps?q=Naturals%20Salon%20Adoor&output=embed"></iframe>
 </section>
 
@@ -133,11 +148,12 @@ iframe{width:100%;height:420px;border:0;border-radius:24px}
 <h3>Naturals Salon Adoor</h3>
 <p>Made For The Spotlight</p>
 <p>WhatsApp: 088481 13819</p>
+<p>Open Daily • 9:00 AM – 10:00 PM</p>
 </footer>
 
 <div class="float">
 <a href="https://wa.me/918848113819">💬</a>
-<a href="https://maps.app.goo.gl/6b8Q9w9oVejY1xys7?g_st=ac">📍</a>
+<a href="https://maps.app.goo.gl/6b8Q9w9oVejY1xys7">📍</a>
 </div>
 
 </body>
